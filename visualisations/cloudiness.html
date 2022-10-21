@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Cloudiness</title>
 </head>
 <body>
 
     <!-- Add Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="../index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,13 +41,15 @@
 
       <!-- Display chosen visualisation image -->
       <div class="container-md position-relative" style="top: 30px">
-        <div class="row justify-content-between">
+        <div class="row justify-content-around">
             <div class="col-md-7 bg-white">
                 <div>
-                    <h1 class="div-title border-bottom py-3">Cloudiness</h1>
+                    <h1 class="text-center border-bottom py-3">Cloudiness</h1>
+                </div>
+                <div class="text-center">
+                    <img src="../assets/images/figure3.png" class="imgshadow p-1" alt="City Latitude vs. Cloudiness" width="75%">
                 </div>
                 <div>
-                    <img src="../assets/images/figure3.png" class="imgshadow vis-selected p-1" alt="City Latitude vs. Cloudiness" width="75%">
                     <!-- Description -->
                     <p>Analysing the relationship between a city's latitude and it's cloudiness.</p>
                     <p>At this time of year, it appears that most cities are either experiencing very low, or very high cloud coverage. However, it seems that the cities with the lowest cloudiness are largely located away from the equator (approx. ±20 degrees latitude or greater).</p>
@@ -57,19 +60,17 @@
             <!-- Sidebar with clickable previews -->
             <div class="col-md-4 text-start text-md-center bg-white">
                 <div>
-                    <h1 class="div-title border-bottom py-3">
-                        Visualisations
-                    </h1>
+                    <h1 class="text-center border-bottom py-3">Visualisations</h1>
                 </div>
                 <div>
                   <a href="temperature.html">
-                    <img src="../assets/images/figure1.png" class="float link-pics  link-selected p-1" alt="City Latitude vs. Max Temperature" width="49%"></a>
+                    <img src="../assets/images/figure1.png" class="float p-1" alt="City Latitude vs. Max Temperature" width="49%"></a>
                  <a href="humidity.html">
-                    <img src="../assets/images/figure2.png" class="float link-pics p-1" alt="City Latitude vs. Humidity" width="49%"></a>
+                    <img src="../assets/images/figure2.png" class="float p-1" alt="City Latitude vs. Humidity" width="49%"></a>
                 <a href="cloudiness.html">
-                    <img src="../assets/images/figure3.png" class="float link-pics p-1" alt="City Latitude vs. Cloudiness" width="49%"></a>
+                    <img src="../assets/images/figure3.png" class="float p-1" alt="City Latitude vs. Cloudiness" width="49%"></a>
                 <a href="wind.html">
-                    <img src="../assets/images/figure4.png" class="float link-pics p-1" alt="City Latitude vs. Wind Speed" width="49%"></a>
+                    <img src="../assets/images/figure4.png" class="float p-1" alt="City Latitude vs. Wind Speed" width="49%"></a>
                 </div>
             </div>
         </div>
