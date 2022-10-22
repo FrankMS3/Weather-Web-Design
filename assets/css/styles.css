@@ -36,4 +36,8 @@ p {
     body {
         background-color: rgb(4, 0, 40);
     }
+
+    a.navbar-brand {
+        padding: 8px;
+      }
 }
